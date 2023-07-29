@@ -1,4 +1,4 @@
-import DataAccess
+from DataAccess import DataAccess
 
 
 
@@ -19,7 +19,7 @@ def main():
           
           If you want to see "PATH TO ERDOS" of some author, insert text like this:
           >> -p Milos Radovanovic
-          and as a response you will get shortest path (or multiple, if there is more than one) to the legendary mathematician "Paul Erdős"!
+          and as a response you will get shortest path (or multiple, if there is more than one) to the legendary mathematician "Paul Erdös"!
           """)
 
     while(True):
@@ -49,7 +49,7 @@ def main():
         if tokens[0] == "-c":
             colleagues = db.find_colleagues(tokens[1])
             if len(colleagues) == 0:
-                print("There are no colleagues for this author...")
+                print(f"There are no colleagues for {tokens[1]}...")
                 continue
 
             print("I found those colleagues: ")
@@ -61,11 +61,31 @@ def main():
         if tokens[0] == "-p":
             paths = find_paths(tokens[1])
             if len(paths) == 0:
-                print("There are no paths from this author to Paul Erdős")
-    
+                print(f"There are no paths from {tokens[1]} to Paul Erdös")
+                continue
+
+            print(f"Erdős number of {tokens[1]} is {len(paths[0])}")
+            print("Paths:")
+            for path in paths:
+                print(" - ".join(path))
+            
 
 def find_paths(author: str):
-    pass
+    paths = []
+    path_map = {}
+    queue = []
+    queue.append(author)
+    i = 0
+    while i < len(queue):
+        
+        colleagues = db.find_colleagues(author)
+        for coll in colleagues:
+            if coll == "Paul Erdös":
+                pass
+            if coll not in queue:
+                queue.append(coll)
+    
+    
 
 
 if __name__ == "__main__":
