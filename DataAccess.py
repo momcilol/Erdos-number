@@ -19,7 +19,7 @@ class DataAccess:
             RETURN n.name
         """, author=author, database_= "neo4j")
         colleagues = [r.value() for r in result[0]]
-        print(colleagues)
+        # print(colleagues)
         return colleagues
 
     
@@ -38,9 +38,15 @@ class DataAccess:
         query = DataAccess._find_author_template.replace("$where_clause", where_clause)
         result = self.driver.execute_query(query,parameters_=sub_dict)
         authors = [r.value() for r in result[0]]
-        print(authors)
+        # print(authors)
         return authors
 
+
+    def check_author(self, author: str) -> bool:
+        result = self.driver.execute_query("MATCH (n:Author {name: $author}) RETURN n.name", author=author)
+        authors = [r.value() for r in result[0]]
+        # print(authors)
+        return len(authors) == 1
    
     def create_and_return_greeting(self, message):
         result = self.driver.execute_query("""
@@ -53,6 +59,7 @@ class DataAccess:
 
 if __name__ == "__main__":
     db = DataAccess("bolt://localhost:7687","neo4j","password")
-    db.find_colleagues("Neki tamo levi")
-    # db.find_author("Neki tamo levi")
+    # db.find_colleagues("Neki tamo levi")
+    # db.find_author("Paul Erd")
     # db.create_and_return_greeting("Hello World!!!")
+    db.check_author("Milos Radovanovic")
