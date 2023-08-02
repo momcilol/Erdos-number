@@ -1,0 +1,252 @@
+
+    WELCOME TO "PATH TO ERDÖS" FINDER!!!
+    
+    If u want to search authors insert text like this:
+    >> -a Milos Radovanovic
+    and as a response you will get all authors that have both "Milos" and "Radovanovic" in their name.
+          
+    If you want to see all authors that have worked with some author, insert text like this:
+    >> -c Milos Radovanovic 
+    and as a response you will get all authors that "Milos Radovanovic" have worked with. 
+          
+    If you want to see "PATH TO ERDÖS" of some author, you have three choises:
+    1. Using Breadth First Search (BFS):
+    >> -bfs Milos Radovanovic
+    2. Using Iterative Deepening Search(IDS):
+    >> -ids Milos Radovanovic
+    3. Using Bidirectional Breadth First Search (BBFS)
+    >> -bbfs Milos Radovanovic
+    and as a response you will get shortest path (or multiple, if there is more than one) to the legendary mathematician "Paul Erdös"!
+
+    For exit type:
+    >> exit
+
+    To print again this welcome message type:
+    >> welcome
+    
+>> -bbfs Milos Radovanovic
+Execution time: 0.6661067008972168
+Erdös number of Milos Radovanovic is 3
+Paths:
+1. Milos Radovanovic - Ken-ichi Kawarabayashi - Guantao Chen - Paul Erdös
+2. Milos Radovanovic - Ken-ichi Kawarabayashi - Ronald J. Gould - Paul Erdös
+3. Milos Radovanovic - Michael E. Houle - David Avis - Paul Erdös
+4. Milos Radovanovic - Ken-ichi Kawarabayashi - Carsten Thomassen - Paul Erdös
+5. Milos Radovanovic - Ken-ichi Kawarabayashi - Alexandr V. Kostochka - Paul Erdös
+>> -bbfs Aleksandar Tomcic
+Execution time: 1.5893375873565674
+Erdös number of Aleksandar Tomcic is 4
+Paths:
+1. Aleksandar Tomcic - Milenko Tosic - Oscar Moreno - Herbert Taylor - Paul Erdös
+2. Aleksandar Tomcic - Milos Radovanovic - Ken-ichi Kawarabayashi - Carsten Thomassen - Paul Erdös
+3. Aleksandar Tomcic - Milos Radovanovic - Ken-ichi Kawarabayashi - Alexandr V. Kostochka - Paul Erdös
+4. Aleksandar Tomcic - Milos Radovanovic - Ken-ichi Kawarabayashi - Ronald J. Gould - Paul Erdös
+5. Aleksandar Tomcic - Milos Radovanovic - Ken-ichi Kawarabayashi - Guantao Chen - Paul Erdös
+6. Aleksandar Tomcic - Milos Radovanovic - Michael E. Houle - David Avis - Paul Erdös
+>> -bfs Aleksandar Tomcic
+Execution time: 79.74040794372559
+Erdös number of Aleksandar Tomcic is 4
+Paths:
+1. Aleksandar Tomcic - Milenko Tosic - Oscar Moreno - Herbert Taylor - Paul Erdös
+2. Aleksandar Tomcic - Milos Radovanovic - Michael E. Houle - David Avis - Paul Erdös
+3. Aleksandar Tomcic - Milos Radovanovic - Ken-ichi Kawarabayashi - Guantao Chen - Paul Erdös
+4. Aleksandar Tomcic - Milos Radovanovic - Ken-ichi Kawarabayashi - Ronald J. Gould - Paul Erdös
+5. Aleksandar Tomcic - Milos Radovanovic - Ken-ichi Kawarabayashi - Carsten Thomassen - Paul Erdös
+6. Aleksandar Tomcic - Milos Radovanovic - Ken-ichi Kawarabayashi - Alexandr V. Kostochka - Paul Erdös
+>> -c Aleksandar Tomcic
+I found those colleagues: 
+David Emanuel Rua
+Fábio André Coelho
+Sasa Pesic
+Barry Nouwt
+Milenko Tosic
+Milos Savic 0001
+Milos Radovanovic
+>> -bbfs Sasa Pesic
+Execution time: 1.7410876750946045
+Erdös number of Sasa Pesic is 4
+Paths:
+1. Sasa Pesic - Milos Radovanovic - Michael E. Houle - David Avis - Paul Erdös
+2. Sasa Pesic - Milos Radovanovic - Ken-ichi Kawarabayashi - Carsten Thomassen - Paul Erdös
+3. Sasa Pesic - Milos Radovanovic - Ken-ichi Kawarabayashi - Alexandr V. Kostochka - Paul Erdös
+4. Sasa Pesic - Milos Radovanovic - Ken-ichi Kawarabayashi - Ronald J. Gould - Paul Erdös
+5. Sasa Pesic - Milos Radovanovic - Ken-ichi Kawarabayashi - Guantao Chen - Paul Erdös
+6. Sasa Pesic - Milenko Tosic - Oscar Moreno - Herbert Taylor - Paul Erdös
+7. Sasa Pesic - Dragan Boscovic - Oscar Moreno - Herbert Taylor - Paul Erdös
+>> -bbfs David Emanuel Rua
+Execution time: 1.3847815990447998
+Erdös number of David Emanuel Rua is 4
+Paths:
+1. David Emanuel Rua - Milenko Tosic - Oscar Moreno - Herbert Taylor - Paul Erdös
+>> -bbfs Fábio André Coelho
+Execution time: 1.3915972709655762
+Erdös number of Fábio André Coelho is 4
+Paths:
+1. Fábio André Coelho - Milenko Tosic - Oscar Moreno - Herbert Taylor - Paul Erdös
+>> -bbfs Barry Nouwt
+Execution time: 1.4499213695526123
+Erdös number of Barry Nouwt is 4
+Paths:
+1. Barry Nouwt - Victor de Boer - Maarten Marx - Joel Spencer - Paul Erdös
+2. Barry Nouwt - Milenko Tosic - Oscar Moreno - Herbert Taylor - Paul Erdös
+>> -bbfs Olga Lovick
+Execution time: 0.12917470932006836
+Erdös number of Olga Lovick is 3
+Paths:
+1. Olga Lovick - Christopher Cox - Steve Butler - Paul Erdös
+>> -bbfs Joshua Holden
+Execution time: 0.14507293701171875
+Erdös number of Joshua Holden is 3
+Paths:
+1. Joshua Holden - Christopher Cox - Steve Butler - Paul Erdös
+>> -a Richard Dedekind         
+There is no author with that or similar name...
+>> -a Jacobsthal
+There is no author with that or similar name...
+>> -a Hamming
+I found those authors: 
+Richard Wesley Hamming
+Jeanne Hamming
+Louis Chamming's
+N. Hamming
+>> -bbfs Richard Wesley Hamming
+Execution time: 2.1122829914093018
+Erdös number of Richard Wesley Hamming is 5
+Paths:
+1. Richard Wesley Hamming - William C. Carter - Alexander Birman - Jeffrey D. Ullman - Ronald L. Graham - Paul Erdös
+2. Richard Wesley Hamming - William C. Carter - Daniel Brand - Indira Nair - Gabriel M. Silberman - Paul Erdös
+3. Richard Wesley Hamming - William C. Carter - Daniel Brand - Sandip Kundu - Israel Koren - Paul Erdös
+4. Richard Wesley Hamming - William C. Carter - Daniel Brand - Vijay S. Iyengar - Gabriel M. Silberman - Paul Erdös
+>> -a Dijkstra
+I found those authors: 
+Anne M. Dijkstra
+Marcel B. Dijkstra
+Evert Dijkstra
+Jouke Dijkstra
+Arjan S. Dijkstra
+E. J. Dijkstra
+Ton Dijkstra
+Jasper Dijkstra
+Tom Dijkstra
+Atze Dijkstra
+Edsger W. Dijkstra
+Henk A. Dijkstra
+Fokke Dijkstra
+Freek Dijkstra
+Tjeerd Dijkstra
+Theo K. Dijkstra
+Henk Dijkstra
+Martijn Dijkstra
+Nadine Dijkstra
+Jelske Dijkstra
+Boudewijn H. Dijkstra
+Jaap J. Dijkstra
+Roald Dijkstra
+Katinka Dijkstra
+Jelke Dijkstra
+Klaas Dijkstra
+Maurits J. J. Dijkstra
+Sijo Dijkstra
+Willem Dijkstra
+Annemieke Dijkstra
+Martin Dijkstra
+F. Dijkstra
+Gabe Dijkstra
+L. J. Dijkstra
+Lukas Dijkstra
+Sylvie Dijkstra-Soudarissanane
+Jan Willem Dijkstra
+Jacob Dijkstra
+Jan Kornelis Dijkstra
+Jan Dijkstra
+Alice Dijkstra
+T. M. H. Dijkstra
+Jan J. Dijkstra
+Sanne Dijkstra
+Pieter Dijkstra
+Rutger M. Dijkstra
+Jasper T. Dijkstra
+Hildebrand Dijkstra
+Karen Dijkstra
+Sietse Dijkstra
+Ramon Dijkstra
+Meindert Dijkstra
+Richard Dijkstra
+B. G. Dijkstra
+Branko G. Dijkstra
+H. Dijkstra
+Arie Dijkstra
+Paul Dijkstra
+I. L. Dijkstra
+Frank Dijkstra
+Rob Dijkstra
+Jelle Dijkstra
+Ate Dijkstra
+Ger Dijkstra
+Arjan H. Dijkstra
+Rick Dijkstra
+Trude Dijkstra
+Dirk Dijkstra
+>> -bbfs Edsger W. Dijkstra
+Execution time: 0.18632125854492188
+Erdös number of Edsger W. Dijkstra is 3
+Paths:
+1. Edsger W. Dijkstra - Richard J. Lipton - Yechezkel Zalcstein - Paul Erdös
+2. Edsger W. Dijkstra - Richard J. Lipton - Daniel J. Kleitman - Paul Erdös
+3. Edsger W. Dijkstra - Richard J. Lipton - Joel H. Spencer - Paul Erdös
+4. Edsger W. Dijkstra - Richard J. Lipton - Noga Alon - Paul Erdös
+5. Edsger W. Dijkstra - Richard J. Lipton - László Lovász 0001 - Paul Erdös
+>> -bbfs Peter Naur
+Execution time: 1.685866117477417
+Erdös number of Peter Naur is 4
+Paths:
+1. Peter Naur - Alan J. Perlis - Richard J. Lipton - Noga Alon - Paul Erdös
+2. Peter Naur - Alan J. Perlis - Richard J. Lipton - Joel H. Spencer - Paul Erdös
+3. Peter Naur - Alan J. Perlis - Richard J. Lipton - László Lovász 0001 - Paul Erdös
+4. Peter Naur - Alan J. Perlis - Richard J. Lipton - Yechezkel Zalcstein - Paul Erdös
+5. Peter Naur - Alan J. Perlis - Richard J. Lipton - Daniel J. Kleitman - Paul Erdös
+6. Peter Naur - Alan J. Perlis - Spencer Rugaber - Craig A. Tovey - Paul Erdös
+7. Peter Naur - Alan J. Perlis - Lawrence Snyder - Yechezkel Zalcstein - Paul Erdös
+>> -a Budimac
+I found those authors: 
+Zoran Budimac
+>> -bbfs Zoran Budimac
+Execution time: 2.2247204780578613
+Erdös number of Zoran Budimac is 4
+Paths:
+1. Zoran Budimac - Milos Radovanovic - Ken-ichi Kawarabayashi - Carsten Thomassen - Paul Erdös
+2. Zoran Budimac - Milos Radovanovic - Ken-ichi Kawarabayashi - Alexandr V. Kostochka - Paul Erdös
+3. Zoran Budimac - Milos Radovanovic - Ken-ichi Kawarabayashi - Ronald J. Gould - Paul Erdös
+4. Zoran Budimac - Milos Radovanovic - Ken-ichi Kawarabayashi - Guantao Chen - Paul Erdös
+5. Zoran Budimac - Weihui Dai - Dongrong Xu - D. Frank Hsu - Paul Erdös
+6. Zoran Budimac - Milos Radovanovic - Michael E. Houle - David Avis - Paul Erdös
+7. Zoran Budimac - Vladimir Kurbalija - Michael E. Houle - David Avis - Paul Erdös
+8. Zoran Budimac - Weihui Dai - Xin Liu - Guantao Chen - Paul Erdös
+9. Zoran Budimac - Weihui Dai - Jian Wang - Peter Frankl - Paul Erdös
+10. Zoran Budimac - Weidong Zhao - Jian Wang - Peter Frankl - Paul Erdös
+11. Zoran Budimac - Hussein Zedan - Jonathan P. Bowen - Robin J. Wilson - Paul Erdös
+12. Zoran Budimac - Weidong Zhao - Jing Wang - D. Frank Hsu - Paul Erdös
+>> -bfs Richard Wesley Hamming
+Execution time: 327.80703949928284
+Erdös number of Richard Wesley Hamming is 5
+Paths:
+1. Richard Wesley Hamming - William C. Carter - Alexander Birman - Jeffrey D. Ullman - Ronald L. Graham - Paul Erdös
+2. Richard Wesley Hamming - William C. Carter - Daniel Brand - Sandip Kundu - Israel Koren - Paul Erdös
+3. Richard Wesley Hamming - William C. Carter - Daniel Brand - Indira Nair - Gabriel M. Silberman - Paul Erdös
+4. Richard Wesley Hamming - William C. Carter - Daniel Brand - Vijay S. Iyengar - Gabriel M. Silberman - Paul Erdös
+>> -bfs Milos Stojakovic
+Execution time: 0.4295792579650879
+Erdös number of Milos Stojakovic is 2
+Paths:
+1. Milos Stojakovic - Michael Krivelevich - Paul Erdös
+>> -ids Milos Stojakovic
+Execution time: 0.33388185501098633
+Erdös number of Milos Stojakovic is 2
+Paths:
+1. Milos Stojakovic - Michael Krivelevich - Paul Erdös
+>> -bbfs Milos Stojakovic
+Execution time: 0.029482603073120117
+Erdös number of Milos Stojakovic is 2
+Paths:
+1. Milos Stojakovic - Michael Krivelevich - Paul Erdös
+>> exit
