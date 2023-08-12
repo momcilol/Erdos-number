@@ -192,7 +192,8 @@ def find_paths_bfs(author: str):
                     path_exists = True
                     break
 
-                #Check if coll is in that level in queue or above (smaller index), making sure we don't go backward
+                # Check if coll is in that level in queue or above (smaller index), 
+                # making sure we don't go backward
                 if coll not in path_map:
                     queue[i+1].append(coll)
                     path_map[coll] = {"level": i+1, "parents": [queue[i][j]]}
@@ -266,7 +267,8 @@ def find_paths_bbfs(author: str):
                             path_exists = True
                             continue
 
-                        #Check if coll is in that level in queue or above (smaller index), making sure we don't go backward
+                        #Check if coll is in that level in queue or above (smaller index), 
+                        # making sure we don't go backward
                         if coll not in path_map_bbfs[k]:
                             queue[k][i+1].append(coll)
                             path_map_bbfs[k][coll] = {"level": i+1, "parents": [queue[k][i][j]]}

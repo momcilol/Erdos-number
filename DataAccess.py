@@ -9,9 +9,6 @@ class DataAccess:
         self.driver = GraphDatabase.driver(uri, auth=(user, password))
         self._find_author_template
 
-    def close_session(self):
-        self.session.close()
-
     
     def find_colleagues(self, author):
         result = self.driver.execute_query(""" 
