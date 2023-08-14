@@ -214,14 +214,10 @@ def find_paths_bfs(author: str):
             if path_exists or len(queue[i]) == 0:
                 break
 
-
     if not path_exists:
         return []       
     
-    
-    paths = dfs_paths(erdos_name, author, path_map)
-    path_map = {}
-    return paths
+    return dfs_paths(erdos_name, author, path_map)
 
 
 def dfs_paths(curr: str, author: str, map: dict):
